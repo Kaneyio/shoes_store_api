@@ -43,6 +43,11 @@ git clone https://github.com/Kaneyio/shoes_store_api.git
     pgdata:
 ```
 
+4. Rodar o banco de dados
+```bash
+  docker-compose up -d
+```
+
 3. Renomear o arquivo `.envtemplate` para `.env` e preencher as variáveis:
 ```bash
   POSTGRES_DB= #Mesmo nome do banco de dados do arquivo docker-compose.yml
