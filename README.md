@@ -43,12 +43,12 @@ git clone https://github.com/Kaneyio/shoes_store_api.git
     pgdata:
 ```
 
-4. Rodar o banco de dados
+3. Rodar o banco de dados
 ```bash
   docker-compose up -d
 ```
 
-3. Renomear o arquivo `.envtemplate` para `.env` e preencher as variáveis:
+4. Renomear o arquivo `.envtemplate` para `.env` e preencher as variáveis:
 ```bash
   POSTGRES_DB= #Mesmo nome do banco de dados do arquivo docker-compose.yml
   POSTGRES_USER= #Mesmo nome do usuário do arquivo docker-compose.yml
@@ -59,27 +59,27 @@ git clone https://github.com/Kaneyio/shoes_store_api.git
   REFRESH_TOKEN_LIFETIME=7
 ```
 
-4. Instalar as dependências:
+5. Instalar as dependências:
 ```bash
   poetry install
 ```
 
-5. Criar as migrações:
+6. Criar as migrações:
 ```bash
   poetry run python manage.py makemigrations
 ```
 
-6. Aplicar as migrações:
+7. Aplicar as migrações:
 ```bash
   poetry run python manage.py migrate
 ```
 
-7. Configurar superuser:
+8. Configurar superuser:
 ```bash
   poetry run python manage.py createsuperuser
 ```
 
-8. Iniciar o servidor
+9. Iniciar o servidor
 
 ```bash
   make dev
