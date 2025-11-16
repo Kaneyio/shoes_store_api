@@ -13,7 +13,6 @@ Este projeto tem como objetivo gerenciar os calçados de uma loja de calçados c
 
 ### Pré-requisitos obrigatórios necessários:
 ![Python](https://img.shields.io/badge/Python-v3.13.7%2B-3776AB?logo=python)
-![Django](https://img.shields.io/badge/Django-v5.2.8%2B-092E20?logo=django)
 ![Poetry](https://img.shields.io/badge/Poetry-v2.2.1%2B-60A5FA?logo=poetry)
 ![Docker](https://img.shields.io/badge/Docker-v4.50.0%2B-2496ED?logo=docker)
 
