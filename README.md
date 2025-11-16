@@ -25,7 +25,7 @@ Este projeto tem como objetivo gerenciar os calçados de uma loja de calçados c
 ### Instalação:
 1. Clonar o repositório
 ```bash
-git clone https://github.com/Kaneyio/shoes_store_api.git
+  command: git clone https://github.com/Kaneyio/shoes_store_api.git
 ```
 
 2. Renomear o arquivo `docker-compose-template.yml` para `docker-compose.yml` e preencher as variáveis:
@@ -49,7 +49,7 @@ git clone https://github.com/Kaneyio/shoes_store_api.git
 
 3. Rodar o banco de dados: ```⚠️Etapa importante!```
 ```bash
-  docker-compose up -d
+  command: docker-compose up -d
 ```
 
 4. Renomear o arquivo `.envtemplate` para `.env` e preencher as variáveis:
@@ -94,7 +94,8 @@ git clone https://github.com/Kaneyio/shoes_store_api.git
 `Nessa etapa, você deve inserir um nome de usuário, um email e uma senha, confirmando a mesma logo em seguida.`  
 `O usuário criado nesta etapa será utilizado para acessar a plataforma de administração da API e também para acessar o sistema na página de login da ShoesStore.`
 
-9. Iniciar o servidor
+### Execução:
+1. Rodar o servidor:
 
 ```bash
   command: poetry run python manage.py runserver
@@ -102,15 +103,13 @@ git clone https://github.com/Kaneyio/shoes_store_api.git
   command: make dev
 ```
 
-10. Informações importantes:
+### ⚠️ Informações importantes:
 
-Após iniciar o servidor, as requisições podem ser feitas ao endereço:
-
-ShoesStoreAPI: http://localhost:8000/api/
-
+Após iniciar o servidor, as requisições podem ser feitas ao endereço:  
+ShoesStoreAPI: http://localhost:8000/api/  
 Tanto pela plataforma de administração do Django quanto pelo front-end no app ShoesStore.  
 ___
-Os endpoints disponíveis estão documentados pelo Swagger no endereço:
-
+Os endpoints disponíveis estão documentados pelo Swagger no endereço:  
 Swagger: http://localhost:8000/swagger/.
 
+---
